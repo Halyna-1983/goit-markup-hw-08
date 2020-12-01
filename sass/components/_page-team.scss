@@ -1,0 +1,111 @@
+.team {
+    padding-top: 95px;
+    padding-bottom: 95px;
+    background-color: #F5F4FA;
+}
+
+.features-title-flex {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.name-flex {
+    margin-right: 30px; 
+    background: $main-white-color;
+       
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.social-team {
+    display: flex;
+    padding: 0;
+
+    width: 210px;
+    height: 45px;
+
+    margin-top: 16px;
+    margin-bottom: 30px;
+    margin-right: 32px;
+    margin-left: 32px;
+}
+
+.social-link-icon {
+    fill: #AFB1B8;
+
+    transition-duration: $duration;
+    transition-timing-function: $cubic;
+
+    .social-link:hover &, .social-link:focus & {
+        fill: $main-white-color;
+        background-color: $color-blue;
+    }
+}
+
+.social-team:last-child {
+    margin-right: 0;
+}
+
+.social-link {
+    display: inline-flex;
+
+    background-color: $main-white-color;
+    border-radius: 50%;
+
+    text-align: center;
+    align-items: flex-start;
+   
+    width: 45px;
+    height: 45px;
+
+    justify-content: center;
+    align-items: center;
+
+    transition-duration: $duration;
+    transition-timing-function: $cubic;
+
+    &:hover,
+    &:focus {
+        background-color: $color-blue;
+    }
+}
+
+// .social-link:hover .social-link-icon, .social-link:focus .social-link-icon {
+//     fill: $main-white-color;
+//     background-color: $color-blue;
+//     }
+
+// .social-link:hover, .social-link:focus {
+//     background-color: $color-blue;
+// }
+
+.features-title-flex .name-flex:last-child {
+    margin-right: 0;
+}
+
+.team-name {
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    color: $primary-title-color;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+
+    text-align: center;
+ }
+
+ .team-occupation {
+    margin-top: 0;
+    /* margin-bottom: 30px; */
+
+    color: $primary-text-color;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    
+    text-align: center;
+ }

@@ -1,0 +1,218 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+
+    opacity: 1;
+    transition: opacity 250ms $cubic;
+
+    z-index: 1;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0.9);
+}
+
+.modal {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    background-color: $main-white-color;
+
+    transform: translate(-50%, -50%) scale(1);
+
+    transition: transform 250ms $cubic;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+
+    width: 530px;
+    height: 580px;
+    outline: 1px solid;
+}
+
+.form-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    /* text-align: center; */
+
+    color: $primary-title-color;
+
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 15px;
+
+    margin: 0;
+}
+
+.form-field {
+    position: relative;
+    display: flexbox;
+    /* flex-direction: column; */
+    margin-bottom: 10px;
+}
+
+.form .form-field:nth-child(4n+2) {
+    margin-bottom: 0;
+}
+
+.form-text {
+    position: relative;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+
+    color: $primary-text-color;
+
+    margin-bottom: 4px;
+    padding-left: 40px;
+}
+
+.form-field label {
+    margin-bottom: 5px;
+}
+
+.form-input {
+    width: 450px;
+    height: 40px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 10px 45px;
+}
+
+.form-icon {
+    position: absolute;
+
+    top: 50%;
+    left: 12px;
+    margin-left: 45px;
+}
+
+.form-field:focus-within .form-text {
+    transform: translate(-50%);
+}
+
+.text-comment {
+    margin-top: 10px;
+
+    margin-right: 40px;
+}
+
+.form-message {
+    display: block;
+
+    width: 450px;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    line-height: 1.17;
+    color: rgba(117, 117, 117, 0.5);
+
+    padding: 12px 16px;
+    margin-left: 45px;
+}
+
+
+.form-input:focus,
+.form-message:focus {
+    outline: none;
+    border: 1px solid  #2196f3;
+}
+
+.form-input:focus + .form-icon {
+    fill:  $color-blue;
+}
+
+.information-field-wrapper {
+    position: relative;
+
+    margin-top: 20px;
+    margin-left: 55px;
+}
+
+.form-field textarea {
+    margin-left: 40px;
+}
+
+.agreement-policy {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: normal;
+     font-size: 14px;
+    line-height: 1.71;
+}
+
+.agreement-terms {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: underline;
+}
+
+.information-form-btn {
+    display: flex;
+    width: 200px;
+    height: 50px;
+    background-color: $color-blue;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin: 0 auto;
+    border: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.875;
+
+    letter-spacing: 0.06em;
+    color: $main-white-color;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 56px;
+}
+
+.close {
+    position: absolute;
+
+    top: 8px;
+    right: 8px;
+
+    width: 30px;
+    height: 30px;
+
+    padding: 0;
+
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    background-color: $main-white-color;
+}

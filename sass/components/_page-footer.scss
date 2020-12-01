@@ -1,0 +1,193 @@
+footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: #2F303A;
+    color: $main-white-color;
+}
+
+.footer {
+    display: block;
+}
+
+.studio-footer {
+    color: $main-white-color;
+}
+
+address {
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    color: $main-white-color;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+
+    &:hover, 
+    &:focus {
+        color:  $color-blue;
+
+        transition-duration: $duration;
+        transition-timing-function: $cubic;
+    }
+}
+
+// address:hover, address:focus {
+//     color:  $color-blue;
+
+//     transition-duration: $duration;
+//     transition-timing-function: $cubic;
+// }
+
+.footer-list {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.contact {
+    padding-bottom: 10px;
+    color: rgba(255, 255, 255, 0.6);
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+
+    transition-duration: $duration;
+    transition-timing-function: $cubic;
+
+    &:hover,
+    &:focus {
+        color:  $color-blue;
+    }
+}
+
+// .contact:hover, .contact:focus {
+//     color:  $color-blue;
+// }
+
+.contact-block {
+    padding-left: 15px;
+    /* margin-top: 0;
+    margin-bottom: 0; */
+}
+
+.join-block-title {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.join-block {
+    padding-left: 70px;
+}
+
+.social {
+    display: inline-block;
+    padding-right: 0;
+    padding-left: 0;
+
+    width: 45px;
+    height: 45px;
+}
+
+.social-display {
+    display: flex;
+    padding: 0;
+}
+
+.social-icon {
+    display: inline-flex;
+
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    fill: $main-white-color;
+
+    /* text-align: center;
+    align-items: flex-start; */
+    border: none;
+
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+
+    justify-content: center;
+    align-items: center;
+
+    transition-duration: $duration;
+    transition-timing-function: $cubic;
+
+    &:hover,
+    &:focus {
+        background-color: $color-blue;
+    }
+}
+
+// .social-icon:hover,
+// .social-icon:focus {
+//     background-color: $color-blue;
+// }
+
+.subscription {
+    padding-left: 95px;
+}
+
+.subscribe-form-input {
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color: $main-white-color;
+}
+
+.form-field-subscription {
+    position: relative;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.subscribe-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    height: 50px;
+    padding: 10px 29px;
+    margin-left: 12px;
+    font-weight: 700;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 1.143;
+    letter-spacing: 0.06em;
+    color: $main-white-color;
+    text-align: left;
+    border-style: none;
+    background-color:  $color-blue;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .subscribe-button::after {
+    display: block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*border-radius: 4px;*/
+  }
+
+  .iconsend::after {
+    background-image: url(../svg/send.svg);
+  }

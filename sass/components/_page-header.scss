@@ -1,0 +1,120 @@
+.page-header {
+    background-color: $main-white-color;
+   
+}
+
+header {
+    background-color: $main-white-color;
+}
+
+/* забрала крапочки у всіх списках */
+
+ul {
+    list-style: none;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+/* NAV */
+
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.auth-nav-list {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    display: flex;
+}
+
+.display-flex {
+    display: flex;
+    align-items: center;
+}
+
+.auth-nav-list .item + .item {
+    margin-left: 50px;
+}
+
+.site-nav .item + .item {
+   margin-left: 50px;
+}
+
+.item-icon {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    .item:hover &, .item:focus & {
+        fill: $color-blue;
+        color: $color-blue;
+    }
+}
+
+.item {
+    transition-duration: $duration;
+    transition-timing-function: $cubic;
+}
+
+
+.site-nav {
+    display: flex;
+    margin-left: 95px;
+}
+
+/* навігація сторінки */
+
+.link {
+    position: relative;
+
+    color: $primary-title-color;
+
+    transition-duration: $duration;
+    transition-timing-function: $cubic;
+    
+
+    &:hover,
+    &:focus {
+        color: $color-blue;
+    }
+}
+
+.link.current::after {
+    content: '';
+
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: $color-blue;
+    border-radius: 2%;
+
+    opacity: 1;
+
+    transition-duration: $duration;
+    transition-timing-function: $cubic;
+}
+
+.site-nav .link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+    
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+.site-nav a:hover, .site-nav a:focus {
+    color: $color-blue;
+}
+
+.site-nav .link.current {
+    color:  $color-blue;
+}
