@@ -1,6 +1,27 @@
 .clients {
     padding-top: 95px;
     padding-bottom: 95px;
+
+    @media screen and (min-width: 480px) {
+       padding-top: 60px;
+       padding-bottom: 60px;
+    }
+}
+
+.features-title-clients {
+      margin-top: 0;
+      margin-bottom: 50px;
+      color: $primary-title-color;
+  
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.17;
+  
+      text-align: center;
+
+      @media screen and (min-width: 480px) {
+         margin-bottom: 30px;
+      }
 }
 
 .clients-list {
@@ -24,6 +45,20 @@
    &:hover,
    &:focus {
     border-color:  #2196F3;
+
+   @media screen and (min-width: 480px) {
+      width: 210px;
+      margin-bottom: 30px;
+      margin-right: 15px;
+
+   @media screen and (min-width: 480px) {
+      &:nth-child(3n) {
+         margin-right: 0;
+      }
+
+   @media screen and (min-width: 480px) {
+      &:nth-child(n + 5) {
+         margin-bottom: 0;
    }
 }
 
@@ -36,20 +71,15 @@
 .clients-name-icon {
    fill: #AFB1B8;
 
-   transition-duration: $duration;
+   transition-duration: $duratuion;
    transition-timing-function: $cubic;
-
-   .clients-name:hover &,
-   .clients-name:focus & {
-    fill: #2196F3;
-   }
 }
 
-// .clients-name:hover, .clients-name:focus {
-//    border-color:  #2196F3;
-// }
+.clients-name:hover, .clients-name:focus {
+   border-color:  #2196F3;
+}
 
-// .clients-name:hover .clients-name-icon,
-// .clients-name:focus .clients-name-icon {
-//   fill: #2196F3;
-// }
+.clients-name:hover .clients-name-icon,
+.clients-name:focus .clients-name-icon {
+  fill: #2196F3;
+}

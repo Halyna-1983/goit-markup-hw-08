@@ -18,7 +18,7 @@ ul {
 /* NAV */
 
 .main-nav {
-    display: flex;
+    // display: flex;
     align-items: center;
 }
 
@@ -31,6 +31,11 @@ ul {
 
 .display-flex {
     display: flex;
+    @media screen and (min-width: 480px) {
+        width: 480px;
+        height: 60px;
+    }
+
     align-items: center;
 }
 
@@ -60,14 +65,14 @@ ul {
 
 
 .site-nav {
-    display: flex;
+    // display: flex;
     margin-left: 95px;
 }
 
 /* навігація сторінки */
 
 .link {
-    position: relative;
+    // position: relative;
 
     color: $primary-title-color;
 
@@ -84,7 +89,7 @@ ul {
 .link.current::after {
     content: '';
 
-    position: absolute;
+    // position: absolute;
 
     left: 0;
     bottom: 0;

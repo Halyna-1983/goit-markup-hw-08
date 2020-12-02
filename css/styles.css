@@ -310,6 +310,18 @@ ul {
     text-align: center;
 }
 
+.features-title-team {
+    margin-top: 0;
+    margin-bottom: 50px;
+    color: var(--primary-title-color);
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+
+    text-align: center;
+}
+
 .features-title-item {
     /* position: relative; */
     display: flex;
