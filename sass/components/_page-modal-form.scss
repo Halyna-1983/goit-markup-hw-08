@@ -41,6 +41,11 @@
     width: 530px;
     height: 580px;
     outline: 1px solid;
+
+    @media screen and (min-width: 480px) {
+        width: 450px;
+        height: 610px;
+    }
 }
 
 .form-title {
@@ -58,6 +63,10 @@
     padding-bottom: 15px;
 
     margin: 0;
+
+    @media screen and (min-width: 480px) {
+        text-align: center;
+    }
 }
 
 .form-field {
@@ -100,6 +109,10 @@
     margin-left: 40px;
     margin-right: 40px;
     padding: 10px 45px;
+
+    @media screen and (min-width: 480px) {
+        width: 370px;
+    }
 }
 
 .form-icon {
@@ -136,6 +149,10 @@
 
     padding: 12px 16px;
     margin-left: 45px;
+
+    @media screen and (min-width: 480px) {
+        width: 370px;
+    }
 }
 
 
@@ -154,6 +171,10 @@
 
     margin-top: 20px;
     margin-left: 55px;
+
+    @media screen and (min-width: 480px) {
+        margin-left: 40px;
+    }
 }
 
 .form-field textarea {
@@ -166,6 +187,11 @@
     font-weight: normal;
      font-size: 14px;
     line-height: 1.71;
+
+    @media screen and (min-width: 480px) {
+        font-size: 12px;
+        line-height: 1.17;
+    }
 }
 
 .agreement-terms {

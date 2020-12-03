@@ -7,7 +7,7 @@ footer {
 }
 
 .footer {
-    // display: block;
+    display: block;
 }
 
 .studio-footer {
@@ -69,25 +69,45 @@ address {
 
 .contact-block {
     padding-left: 15px;
-
+    
     @media screen and (min-width: 480px) {
         padding-left: 0;
-        
+        display: block;
+        text-align: center;        
     }
 }
 
 .join-block-title {
     margin-top: 0;
     margin-bottom: 0;
+
+    @media screen and (min-width: 480px) {
+        display: block;
+        text-align: center;    
+        margin-top: 60px; 
+    }
 }
 
 .footer-container {
-    display: flex;
-    flex-wrap: wrap;
+    // display: flex;
+    // flex-wrap: wrap;
+
+    @media screen and (min-width: 480px) {
+        display: block;
+        text-align: center;
+    }
 }
 
 .join-block {
     padding-left: 70px;
+    
+    @media screen and (min-width: 480px) {
+        padding-left: 0;
+        text-align: center;
+        display: block;
+
+        margin-bottom: 60px;
+    }
 }
 
 .social {
@@ -102,6 +122,11 @@ address {
 .social-display {
     display: flex;
     padding: 0;
+
+    @media screen and (min-width: 480px) {
+        text-align: center;
+        justify-content: center;
+    }
 }
 
 .social-icon {
@@ -119,7 +144,7 @@ address {
     height: 44px;
     margin-right: 10px;
     margin-top: 20px;
-    margin-bottom: 100px;
+    // margin-bottom: 100px;
 
     justify-content: center;
     align-items: center;
@@ -140,6 +165,10 @@ address {
 
 .subscription {
     padding-left: 95px;
+
+    @media screen and (min-width: 480px) {
+        padding-left: 0;
+    }
 }
 
 .subscribe-form-input {
@@ -150,6 +179,11 @@ address {
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     color: $main-white-color;
+
+    @media screen and (min-width: 480px) {
+        width: 450px;
+        margin-bottom: 20px;
+    }
 }
 
 .form-field-subscription {
