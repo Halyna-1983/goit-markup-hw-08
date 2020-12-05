@@ -10,14 +10,13 @@
 </head>
 <body>
 
-
     <header class="page-header">
         <div class="container main-nav">
         <nav class="display-flex">
             <a href="./index.html" class="logo"> <span class="web">Web</span><span class="studio">Studio</span></a>
 
             <button type="button"
-                    class="menu-button is-open"
+                    class="menu-button"
                     aria-expanded="false"
                     aria-controls="menu-container"
                     data-menu-button>
@@ -32,7 +31,33 @@
                 </svg>
             </button>
 
-            <div class="menu-container is-open" id="menu-container" data-menu>Контент меню</div>
+            <div class="mobile-menu-container" id="menu-container" data-menu>
+                <div class="mobile-navigation">
+                    <ul class="mobile-site-nav list">
+                        <li class="mobile-menu-item"><a href="" class="link current" >Студия</a></li>
+                        <li class="mobile-menu-item"><a href="./portfolio.html" class="link" >Портфолио</a></li>
+                        <li class="mobile-menu-item"><a href="" class="link" >Контакты</a></li>
+                   </ul>
+                </div>
+
+                <div class="mobile-contacts">
+                    <ul class="mobile-auth-nav-list">
+                        <li class="mobile-item">
+                            <svg class="item-icon" width="16" height="12">
+                                <use href="./svg/sprite.svg#icon-envelope"></use>
+                            </svg>
+                            <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+                        </li>
+            
+                        <li class="mobile-item">
+                            <svg class="item-icon" width="12" height="16">
+                                <use href="./svg/sprite.svg#icon-smartphone"></use>
+                            </svg>
+                            <a href="tel:+380961111111" class="link" >+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
             <ul class="site-nav list">
                  <li class="item"><a href="" class="link current" >Студия</a></li>
@@ -469,7 +494,7 @@
         </div>
 
         <script src="./js/modal.js"></script>
-
+        <script src="./js/menu.js"></script>
 
 </body>
 </html>

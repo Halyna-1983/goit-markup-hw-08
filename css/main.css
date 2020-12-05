@@ -394,8 +394,108 @@ body {
   color: #2196F3;
 }
 
+.menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.menu-button .icon-close {
+  display: none;
+}
+
+.menu-button.is-open .icon-close {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.mobile-menu-container {
+  background-color: #E5E5E5;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.mobile-menu-container.is-open {
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-menu-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+  .mobile-menu-container.is-open {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu-container {
+    display: none;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+}
+
+.navigation,
+.contacts {
+  height: 50px;
+  width: 140px;
+}
+
+.navigation {
+  outline: 1px solid teal;
+}
+
+.contacts {
+  outline: 1px solid orange;
+}
+
+.mobile-navigation {
+  padding: 60px 100px;
+}
+
+.mobile-menu-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.mobile-item {
+  margin-bottom: 16px;
+}
+
+.mobile-site-nav {
+  padding-left: 0;
+}
+
+.mobile-site-nav .link.current {
+  color: #2196F3;
+}
+
 .page-header {
   background-color: #FFFFFF;
+  position: relative;
 }
 
 header {
@@ -416,56 +516,28 @@ ul {
           align-items: center;
 }
 
-.menu-button {
-  display: none;
-  margin: 10px 15px 10px 0px;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-}
-
-@media screen and (min-width: 320px) {
-  .menu-button {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .menu-button {
-    display: block;
-  }
-}
-
-.menu-container {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 453px;
-  background-color: palegoldenrod;
-  padding: 20px;
-  text-align: center;
-  font-size: 20px;
-}
-
-.menu-containeris-open {
-  display: block;
-}
-
 .auth-nav-list {
   margin-top: 0;
   margin-bottom: 0;
   margin-left: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
+}
+
+@media screen and (min-width: 767px) {
+  .auth-nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .display-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -517,7 +589,16 @@ ul {
 }
 
 .site-nav {
+  display: none;
   margin-left: 95px;
+}
+
+@media screen and (min-width: 767px) {
+  .site-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 /* навігація сторінки */

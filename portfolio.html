@@ -15,6 +15,50 @@
             <nav class="display-flex">
                 <a href="./index.html" class="logo"> <span class="web">Web</span><span class="studio">Studio</span>  </a>
     
+                <button type="button"
+                class="menu-button"
+                aria-expanded="false"
+                aria-controls="menu-container"
+                data-menu-button>
+        
+            <svg
+                width="40"
+                height="40"
+                aria-label="Переключатель мобильного меню">
+
+                <use class="icon-menu" href="./svg/sprite.svg#icon-menu-button"></use>
+                <use class="icon-close" href="./svg/sprite.svg#icon-phone-black-form"></use>
+            </svg>
+        </button>
+
+        <div class="mobile-menu-container" id="menu-container" data-menu>
+            <div class="mobile-navigation">
+                <ul class="mobile-site-nav list">
+                    <li class="mobile-menu-item"><a href="./index.html" class="link" >Студия</a></li>
+                    <li class="mobile-menu-item"><a href="" class="link current" >Портфолио</a></li>
+                    <li class="mobile-menu-item"><a href="" class="link" >Контакты</a></li>
+               </ul>
+            </div>
+
+            <div class="mobile-contacts">
+                <ul class="mobile-auth-nav-list">
+                    <li class="mobile-item">
+                        <svg class="item-icon" width="16" height="12">
+                            <use href="./svg/sprite.svg#icon-envelope"></use>
+                        </svg>
+                        <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+                    </li>
+        
+                    <li class="mobile-item">
+                        <svg class="item-icon" width="12" height="16">
+                            <use href="./svg/sprite.svg#icon-smartphone"></use>
+                        </svg>
+                        <a href="tel:+380961111111" class="link" >+38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
                 <ul class="site-nav list">
                      <li class="item"><a href="./index.html" class="link" >Студия</a></li>
                      <li class="item"><a href="" class="link current" >Портфолио</a></li>
@@ -240,6 +284,7 @@
         </div>
 
     </footer>
-
+    
+    <script src="./js/menu.js"></script>
 </body>
 </html>
