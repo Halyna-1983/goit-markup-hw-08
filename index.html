@@ -14,16 +14,34 @@
     <header class="page-header">
         <div class="container main-nav">
         <nav class="display-flex">
-            <a href="./index.html" class="logo"> <span class="web">Web</span><span class="studio">Studio</span>  </a>
+            <a href="./index.html" class="logo"> <span class="web">Web</span><span class="studio">Studio</span></a>
 
-            <ul class="site-nav list">
+            <button type="button" data-modal-open
+                    class="menu-button is-open"
+                    aria-expanded="false"
+                    aria-controls="menu-container"
+                    data-menu-button>
+            
+                <svg
+                    width="40"
+                    height="40"
+                    aria-label="Переключатель мобильного меню">
+
+                    <use class="icon-menu" href="./svg/sprite.svg#icon-menu-button"></use>
+                    <use class="icon-close" href="./svg/sprite.svg#icon-phone-black-form"></use>
+                </svg>
+            </button>
+
+            <div class="menu-container is-open" id="menu-container" data-menu>Контент меню</div>
+
+            <!-- <ul class="site-nav list">
                  <li class="item"><a href="" class="link current" >Студия</a></li>
                  <li class="item"><a href="./portfolio.html" class="link" >Портфолио</a></li>
                  <li class="item"><a href="" class="link" >Контакты</a></li>
-            </ul>
+            </ul> -->
         </nav>
 
-        <ul class="auth-nav-list">
+        <!-- <ul class="auth-nav-list">
             <li class="item">
                 <svg class="item-icon" width="16" height="12">
                     <use href="./svg/sprite.svg#icon-envelope"></use>
@@ -37,7 +55,7 @@
                 </svg>
                 <a href="tel:+380961111111" class="link" >+38 096 111 11 11</a>
             </li>
-        </ul>
+        </ul> -->
     </div>
     </header>
 
