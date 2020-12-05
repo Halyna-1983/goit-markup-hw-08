@@ -30,6 +30,10 @@ ul {
     border: none;
     background-color: transparent;
 
+    @media screen and (min-width: 320px) {
+        display: block;
+    }
+
     @media screen and (min-width: 480px) {
         display: block;
     }
@@ -78,6 +82,12 @@ ul {
 
 .display-flex {
     display: flex;
+
+    @media screen and (min-width: 320px) {
+        width: 320px;
+        height: 60px;
+    }
+
     @media screen and (min-width: 480px) {
         width: 480px;
         height: 60px;

@@ -9,6 +9,11 @@
     // padding-left: 450px;
     // padding-right: 450px;
 
+    @media screen and (min-width: 320px) {
+        width: 320px;
+        height: 400px;
+    }
+
     @media screen and (min-width: 480px) {
         width: 480px;
         height: 400px;
@@ -36,6 +41,17 @@
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
+
+    @media screen and (min-width: 320px) {
+        padding-top: 80px;
+        padding-right: 60px;
+        padding-left: 60px;
+        padding-bottom: 50px;
+
+        font-size: 26px;
+        line-height: 1.62;
+        text-transform: uppercase;
+    }
 
     @media screen and (min-width: 480px) {
         padding-top: 120px;
