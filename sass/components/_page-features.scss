@@ -64,6 +64,10 @@
         width: 450px;
     }
 
+    @media screen and (min-width: 768px) {
+        width: 350px;
+    }
+
 }
 
     .features-article {
@@ -78,6 +82,10 @@
     
         text-transform: uppercase;
         text-align: center;
+
+        @media screen and (min-width: 768px) {
+            width: 350px;
+        }
     }
 
 .features-list {
@@ -86,6 +94,11 @@
     
     // display: inline-flex;
     /* flex-wrap: wrap; */
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 .features-list-item {
@@ -126,6 +139,11 @@
     @media screen and (max-width: 480px) {
         width: 320px;
     }
+
+    @media screen and (min-width: 768px) {
+        width: 350px;
+    }
+
 }
 
 .features-title-item {

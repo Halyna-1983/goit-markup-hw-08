@@ -10,7 +10,6 @@
 <symbol id="icon-menu-button" viewBox="0 0 32 32">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.667V0h24v2.667H0zm0 6.666h24V6.667H0v2.666zM0 16h24v-2.667H0V16z" fill="#000"/></path>
 </symbol>
-<symbol id="icon-close-menu" viewBox="0 0 32 32">
-<path d="M21 10.1079L19.8921 9L15.5 13.3921L11.1079 9L10 10.1079L14.3921 14.5L10 18.8921L11.1079 20L15.5 15.6079L19.8921 20L21 18.8921L16.6079 14.5L21 10.1079Z" fill="black"/></path></symbol></defs></svg>
+<symbol id="icon-modal-close" viewBox="0 0 32 32"><path d="M32 3.223L28.777 0 16 12.777 3.223 0 0 3.223 12.777 16 0 28.777 3.223 32 16 19.223 28.777 32 32 28.777 19.223 16 32 3.223z"/></path></symbol></defs></svg>
 
 

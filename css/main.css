@@ -395,13 +395,13 @@ body {
 }
 
 .menu-button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin: 0;
+  display: inline-block;
+  margin: 10px 16px 10px 0;
   padding: 0;
   border: none;
   background-color: transparent;
+  width: 40px;
+  height: 40px;
 }
 
 @media screen and (min-width: 768px) {
@@ -416,6 +416,12 @@ body {
 
 .menu-button.is-open .icon-close {
   display: block;
+}
+
+.icon-menu {
+  background-position: 50% 50%;
+  width: 24px;
+  height: 16px;
 }
 
 .menu-button.is-open .icon-menu {
@@ -516,6 +522,14 @@ ul {
           align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+  .main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .auth-nav-list {
   margin-top: 0;
   margin-bottom: 0;
@@ -531,13 +545,19 @@ ul {
   }
 }
 
+@media screen and (min-width: 767px) {
+  .auth-nav-list {
+    display: block;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .display-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  margin-right: 16px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -559,6 +579,19 @@ ul {
 
 .auth-nav-list .item + .item {
   margin-left: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .auth-nav-list .item + .item {
+    margin-left: 0;
+  }
+}
+
+.auth-nav-list .link {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.14;
 }
 
 .site-nav .item + .item {
@@ -598,6 +631,12 @@ ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav {
+    margin-left: 20px;
   }
 }
 
@@ -669,6 +708,13 @@ ul {
 @media screen and (min-width: 480px) {
   .hero {
     width: 480px;
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    width: 768px;
     height: 400px;
   }
 }
@@ -792,6 +838,12 @@ ul {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .features-icon {
+    width: 350px;
+  }
+}
+
 .features-article {
   margin-top: 0;
   margin-bottom: 10px;
@@ -803,10 +855,26 @@ ul {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .features-article {
+    width: 350px;
+  }
+}
+
 .features-list {
   margin-top: 0;
   padding: 0;
   /* flex-wrap: wrap; */
+}
+
+@media screen and (min-width: 768px) {
+  .features-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .features-list-item {
@@ -848,6 +916,12 @@ ul {
 @media screen and (max-width: 480px) {
   .feature-text {
     width: 320px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .feature-text {
+    width: 350px;
   }
 }
 
@@ -1473,6 +1547,13 @@ address:hover, address:focus {
   outline: 1px solid;
 }
 
+@media screen and (min-width: 320px) {
+  .form {
+    width: 310px;
+    height: 610px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .form {
     width: 450px;
@@ -1494,7 +1575,7 @@ address:hover, address:focus {
   margin: 0;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .form-title {
     text-align: center;
   }
@@ -1538,6 +1619,12 @@ address:hover, address:focus {
   padding: 10px 45px;
 }
 
+@media screen and (min-width: 320px) {
+  .form-input {
+    width: 260px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .form-input {
     width: 370px;
@@ -1576,6 +1663,12 @@ address:hover, address:focus {
   margin-left: 45px;
 }
 
+@media screen and (min-width: 320px) {
+  .form-message {
+    width: 260px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .form-message {
     width: 370px;
@@ -1598,7 +1691,7 @@ address:hover, address:focus {
   margin-left: 55px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .information-field-wrapper {
     margin-left: 40px;
   }
@@ -1616,7 +1709,7 @@ address:hover, address:focus {
   line-height: 1.71;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .agreement-policy {
     font-size: 12px;
     line-height: 1.17;
