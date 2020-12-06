@@ -38,7 +38,7 @@
     // left: 0;
     // width: 100%;
     background-color: $background-color-grey;
-    padding: 20px;
+    
     text-align: center;
     font-size: 18px;
     font-weight: 500;
@@ -81,6 +81,10 @@
   }
   
   .mobile-navigation {
+    display: inline-block;
+    padding-bottom: 40px;
+    color: $color-blue;
+    position: relative;
     padding: 60px 100px;
   }
 

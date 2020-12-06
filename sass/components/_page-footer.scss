@@ -4,10 +4,15 @@ footer {
 
     background-color: #2F303A;
     color: $main-white-color;
+
 }
 
 .footer {
     display: block;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
 }
 
 .studio-footer {
@@ -61,6 +66,12 @@ address {
     &:focus {
         color:  $color-blue;
     }
+
+    @media screen and (min-width: 768px) { 
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
 }
 
 // .contact:hover, .contact:focus {
@@ -75,16 +86,34 @@ address {
         display: block;
         text-align: center;        
     }
+
+    @media screen and (min-width: 768px) {
+        margin-right: 165px;  
+        margin-left: 76px;     
+    }
 }
 
 .join-block-title {
     margin-top: 0;
     margin-bottom: 0;
 
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+
     @media screen and (min-width: 320px) {
         display: block;
         text-align: center;    
         margin-top: 60px; 
+    }
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        text-align: center;    
+        margin-top: 0;
     }
 }
 
@@ -95,6 +124,11 @@ address {
     @media screen and (min-width: 320px) {
         display: block;
         text-align: center;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 
@@ -171,6 +205,19 @@ address {
     }
 }
 
+.contact-block-title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 60px;
+    }
+}
+
 .subscribe-form-input {
     width: 358px;
     height: 50px;
@@ -189,13 +236,23 @@ address {
         width: 450px;
         margin-bottom: 20px;
     }
+
+    @media screen and (min-width: 768px) {
+        margin-left: 160px;
+    }
 }
 
 .form-field-subscription {
-    position: relative;
+    // position: relative;
     display: block;
     margin-top: 20px;
     margin-bottom: 10px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 0;
+    }
 }
 
 .subscribe-button {
@@ -217,6 +274,11 @@ address {
     background-color:  $color-blue;
     border-radius: 4px;
     cursor: pointer;
+
+    @media screen and (min-width: 768px) {
+        margin-left: 290px;
+    }
+    
   }
 
   .subscribe-button::after {
