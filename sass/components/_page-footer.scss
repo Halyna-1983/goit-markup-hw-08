@@ -225,6 +225,10 @@ address {
     @media screen and (min-width: 768px) {
         margin-top: 60px;
     }
+
+    @media screen and (min-width: 768px) {
+        margin-top: 0;
+    }
 }
 
 .subscribe-form-input {
@@ -252,7 +256,7 @@ address {
 
     @media screen and (min-width: 1140px) {
         width: 358px;
-        margin-left: 93px;
+        margin-left: 55px;
     }
 }
 
