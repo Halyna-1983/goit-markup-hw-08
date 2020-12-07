@@ -27,17 +27,6 @@
     }
 }
 
-.features-title-item {
-    /* position: relative; */
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-
-    @media screen and (min-width: 480px) {
-        display: none;
-    }
-}
-
 .features-title-flex {
     // display: flex;
     // flex-wrap: wrap;
