@@ -18,6 +18,13 @@
         margin-bottom: 16px;
         margin-left: 15px;
     }
+
+    @media screen and (min-width: 1140px) {
+        width: 480px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        margin-left: 0;
+    }
 }
 
 .web {

@@ -91,6 +91,11 @@ address {
         margin-right: 165px;  
         margin-left: 76px;     
     }
+
+    @media screen and (min-width: 1140px) {
+        margin-right: 70px;  
+        margin-left: 0;     
+    }
 }
 
 .join-block-title {
@@ -129,6 +134,10 @@ address {
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
     }
 }
 
@@ -240,6 +249,11 @@ address {
     @media screen and (min-width: 768px) {
         margin-left: 160px;
     }
+
+    @media screen and (min-width: 1140px) {
+        width: 358px;
+        margin-left: 93px;
+    }
 }
 
 .form-field-subscription {
@@ -277,6 +291,10 @@ address {
 
     @media screen and (min-width: 768px) {
         margin-left: 290px;
+    }
+
+    @media screen and (min-width: 1140px) {
+        margin-left: 12px;
     }
     
   }
