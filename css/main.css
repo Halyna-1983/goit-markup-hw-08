@@ -293,12 +293,6 @@ html {
   margin-right: auto;
 }
 
-@media screen and (min-width: 320px) {
-  .container {
-    width: 320px;
-  }
-}
-
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -331,12 +325,6 @@ body {
   margin-right: auto;
 }
 
-@media screen and (min-width: 320px) {
-  .container {
-    width: 320px;
-  }
-}
-
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -360,15 +348,6 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-}
-
-@media screen and (min-width: 320px) {
-  .logo {
-    width: 320px;
-    margin-top: 16px;
-    margin-bottom: 16px;
-    margin-left: 15px;
-  }
 }
 
 @media screen and (min-width: 480px) {
@@ -585,13 +564,6 @@ ul {
           align-items: center;
 }
 
-@media screen and (min-width: 320px) {
-  .display-flex {
-    width: 320px;
-    height: 60px;
-  }
-}
-
 @media screen and (min-width: 480px) {
   .display-flex {
     width: 480px;
@@ -727,13 +699,6 @@ ul {
   text-align: center;
 }
 
-@media screen and (min-width: 320px) {
-  .hero {
-    width: 320px;
-    height: 400px;
-  }
-}
-
 @media screen and (min-width: 480px) {
   .hero {
     width: 480px;
@@ -762,18 +727,6 @@ ul {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-}
-
-@media screen and (min-width: 320px) {
-  .hero-title {
-    padding-top: 80px;
-    padding-right: 60px;
-    padding-left: 60px;
-    padding-bottom: 50px;
-    font-size: 26px;
-    line-height: 1.62;
-    text-transform: uppercase;
-  }
 }
 
 @media screen and (min-width: 480px) {
@@ -842,7 +795,7 @@ ul {
   /* background-color: $background-color-grey; */
 }
 
-@media screen and (min-width: 320px) and (max-width: 1139px) {
+@media screen and (min-width: 480px) and (max-width: 1139px) {
   .features-images {
     padding-bottom: 0;
     display: none;
@@ -865,12 +818,6 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 4px;
-}
-
-@media screen and (min-width: 320px) {
-  .features-icon {
-    width: 320px;
-  }
 }
 
 @media screen and (min-width: 480px) {
@@ -942,7 +889,7 @@ ul {
   text-align: center;
 }
 
-@media screen and (min-width: 320px) and (max-width: 1139px) {
+@media screen and (min-width: 480px) and (max-width: 1139px) {
   .features-title {
     display: none;
   }
@@ -1308,15 +1255,7 @@ ul {
   border-color: #2196F3;
 }
 
-@media screen and (min-width: 320px) {
-  .clients-name {
-    width: 130px;
-    margin-bottom: 30px;
-    margin-right: 15px;
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .clients-name:nth-child(2n) {
     margin-right: 0;
   }
@@ -1338,7 +1277,7 @@ ul {
   }
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .clients-name:nth-child(n + 5) {
     margin-bottom: 0;
   }
@@ -1449,7 +1388,7 @@ address:hover, address:focus {
   padding-left: 15px;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .contact-block {
     padding-left: 0;
     display: block;
@@ -1482,7 +1421,7 @@ address:hover, address:focus {
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .join-block-title {
     display: block;
     text-align: center;
@@ -1498,7 +1437,7 @@ address:hover, address:focus {
   }
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .footer-container {
     display: block;
     text-align: center;
@@ -1527,7 +1466,7 @@ address:hover, address:focus {
   padding-left: 70px;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .join-block {
     padding-left: 0;
     text-align: center;
@@ -1551,7 +1490,7 @@ address:hover, address:focus {
   padding: 0;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .social-display {
     text-align: center;
     -webkit-box-pack: center;
@@ -1594,7 +1533,7 @@ address:hover, address:focus {
   padding-left: 95px;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .subscription {
     padding-left: 0;
   }
@@ -1629,13 +1568,6 @@ address:hover, address:focus {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   color: #FFFFFF;
-}
-
-@media screen and (min-width: 320px) {
-  .subscribe-form-input {
-    width: 300px;
-    margin-bottom: 20px;
-  }
 }
 
 @media screen and (min-width: 480px) {
@@ -1778,13 +1710,6 @@ address:hover, address:focus {
   outline: 1px solid;
 }
 
-@media screen and (min-width: 320px) {
-  .form {
-    width: 310px;
-    height: 610px;
-  }
-}
-
 @media screen and (min-width: 480px) {
   .form {
     width: 450px;
@@ -1806,7 +1731,7 @@ address:hover, address:focus {
   margin: 0;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .form-title {
     text-align: center;
   }
@@ -1850,12 +1775,6 @@ address:hover, address:focus {
   padding: 10px 45px;
 }
 
-@media screen and (min-width: 320px) {
-  .form-input {
-    width: 260px;
-  }
-}
-
 @media screen and (min-width: 480px) {
   .form-input {
     width: 370px;
@@ -1894,12 +1813,6 @@ address:hover, address:focus {
   margin-left: 45px;
 }
 
-@media screen and (min-width: 320px) {
-  .form-message {
-    width: 260px;
-  }
-}
-
 @media screen and (min-width: 480px) {
   .form-message {
     width: 370px;
@@ -1922,7 +1835,7 @@ address:hover, address:focus {
   margin-left: 55px;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .information-field-wrapper {
     margin-left: 40px;
   }
@@ -1940,7 +1853,7 @@ address:hover, address:focus {
   line-height: 1.71;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .agreement-policy {
     font-size: 12px;
     line-height: 1.17;
@@ -2201,7 +2114,7 @@ address:hover, address:focus {
   padding: 0 280px;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .btn-portfolio {
     padding: 0;
     margin-bottom: 40px;
