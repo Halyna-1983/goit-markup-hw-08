@@ -1092,16 +1092,16 @@ ul {
     margin-right: 0;
     margin-bottom: 30px;
     width: 450px;
-    height: 482px;
+    height: 622px;
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .name-flex {
     margin-right: 30px;
     margin-bottom: 30px;
     width: 354px;
-    height: 422px;
+    height: 536px;
   }
 }
 
@@ -1133,14 +1133,14 @@ ul {
 @media screen and (min-width: 480px) {
   .team-img-size {
     width: 450px;
-    height: 320px;
+    height: 460px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .team-img-size {
     width: 354px;
-    height: 260px;
+    height: 374px;
   }
 }
 
