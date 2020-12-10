@@ -157,7 +157,7 @@ ul {
 /* навігація сторінки */
 
 .link {
-    // position: relative;
+    position: relative;
 
     color: $primary-title-color;
 
@@ -174,7 +174,7 @@ ul {
 .link.current::after {
     content: '';
 
-    // position: absolute;
+    position: absolute;
 
     left: 0;
     bottom: 0;
@@ -192,8 +192,8 @@ ul {
 }
 
 .site-nav .link {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 30px;
+    padding-bottom: 26px;
     display: block;
     
     font-weight: 500;

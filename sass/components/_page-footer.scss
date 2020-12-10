@@ -81,7 +81,7 @@ address {
 .contact-block {
     padding-left: 15px;
     
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 320px) {
         padding-left: 0;
         display: block;
         text-align: center;        
@@ -109,7 +109,7 @@ address {
     text-align: center;
     text-transform: uppercase;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 320px) {
         display: block;
         text-align: center;    
         margin-top: 60px; 
@@ -126,7 +126,7 @@ address {
     // display: flex;
     // flex-wrap: wrap;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 320px) {
         display: block;
         text-align: center;
     }
@@ -144,7 +144,7 @@ address {
 .join-block {
     padding-left: 70px;
     
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 320px) {
         padding-left: 0;
         text-align: center;
         display: block;
@@ -166,7 +166,7 @@ address {
     display: flex;
     padding: 0;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 320px) {
         text-align: center;
         justify-content: center;
     }
@@ -209,7 +209,7 @@ address {
 .subscription {
     padding-left: 95px;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 320px) {
         padding-left: 0;
     }
 }
@@ -240,8 +240,8 @@ address {
     border-radius: 4px;
     color: $main-white-color;
 
-    @media screen and (min-width: 480px) {
-        width: 450px;
+    @media screen and (min-width: 320px) {
+        width: 100%;
         margin-bottom: 20px;
     }
 
